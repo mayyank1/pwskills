@@ -1,0 +1,960 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "801b6a8e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "2903177c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "93fd91b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(\"pwskills\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "6bd4aad8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class test:\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "80566d39",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = test()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "75aceaaa",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "__main__.test"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "9e878af3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class '__main__.test'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "50c61175",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class pwskills:\n",
+    "    def welcome_msg(self):\n",
+    "        print(\"Welcome to pwskills\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "49cb85a5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rohan = pwskills()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "a02e2a34",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class '__main__.pwskills'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(rohan))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "6d7736e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to pwskills\n"
+     ]
+    }
+   ],
+   "source": [
+    "rohan.welcome_msg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "a4459f1e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gaurav = pwskills()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "d2df0ad8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to pwskills\n"
+     ]
+    }
+   ],
+   "source": [
+    "gaurav.welcome_msg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "c60e7ea4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class pwskills1:\n",
+    "    def __init__(self,phone_no , email_id , student_id):\n",
+    "        self.phone_no = phone_no\n",
+    "        self.email_id = email_id\n",
+    "        self.student_id = student_id\n",
+    "        \n",
+    "    def return_student_details(self):\n",
+    "        return self.student_id,self.phone_no,self.email_id"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "0bc22d86",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rohan = pwskills1(8126838,\"mayank@gmail.com\",78951515)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "83965852",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(78951515, 8126838, 'mayank@gmail.com')"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.return_student_details()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "153ff638",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'mayank@gmail.com'"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.email_id"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "50093fcc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gaurav = pwskills1(95154848418,\"gaurav@gmail.com\",8495949)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "72d41ff9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(8495949, 95154848418, 'gaurav@gmail.com')"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "gaurav.return_student_details()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a3620149",
+   "metadata": {},
+   "source": [
+    "# POLYMORPHISM"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "46b9cee1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def test(a,b):\n",
+    "    return a+b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "8e842639",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "test(3,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "ff37095d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'mayank gaur'"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "test(\"mayank \",\"gaur\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f10f5114",
+   "metadata": {},
+   "source": [
+    "Behaving different for different data types like adding int and concatinating str"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "b8ed463c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5, 6]"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "test([1,2,3],[4,5,6])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "f138b124",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class data_science:\n",
+    "    \n",
+    "    def syllabus(self):\n",
+    "        print(\"This is my syllabus for data science masters\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "b87ef894",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class web_dev:\n",
+    "    \n",
+    "    def syllabus(self):\n",
+    "        print(\"This is my syllabus for web dev\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "3c63d8c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def class_parcer(class_obj):\n",
+    "    for i in class_obj:\n",
+    "        i.syllabus()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "2dbdb1e5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data_science = data_science()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "56c818f9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "web_dev = web_dev()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "f00e3256",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class_obj = [data_science,web_dev]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "e3087d26",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This is my syllabus for data science masters\n",
+      "This is my syllabus for web dev\n"
+     ]
+    }
+   ],
+   "source": [
+    "class_parcer(class_obj)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "71a47510",
+   "metadata": {},
+   "source": [
+    "# ENCAPSULATION"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "46e16fde",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class test:\n",
+    "    \n",
+    "    def __init__(self,a,b):\n",
+    "        self.a = a\n",
+    "        self.b = b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "275eaf08",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t = test(23,34)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "ca531145",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t.a = 2345"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "73fd323a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2345"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t.a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "6ba9667e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class car:\n",
+    "    def __init__(self,year,make,model,speed):\n",
+    "        self.__year = year\n",
+    "        self.__make = make\n",
+    "        self.__model = model\n",
+    "        self.__speed = 0\n",
+    "        \n",
+    "    def set_speed(self,speed):\n",
+    "        self.__speed = 0 if speed < 0 else speed\n",
+    "    \n",
+    "    def get_speed(self):\n",
+    "        return self.__speed"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "62b17210",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c = car(2021,\"toyata\",\"innova\",12)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "753a4ef7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2021"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c._car__year"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "afea0597",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c.set_speed(234)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "8d9844ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "234"
+      ]
+     },
+     "execution_count": 68,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c.get_speed()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "0d328446",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class bank_account:\n",
+    "    def __init__(self,balance): \n",
+    "        self.__balance = balance\n",
+    "    \n",
+    "    def deposit(self,amount):\n",
+    "        self.__balance += amount\n",
+    "    \n",
+    "    def withdraw(self,amount):\n",
+    "        if self.__balance >= amount:\n",
+    "            self.__balance -= amount\n",
+    "            return True\n",
+    "        else:\n",
+    "            return False\n",
+    "    \n",
+    "    def get_balance(self):\n",
+    "        return self.__balance"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "38b2081f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mayank = bank_account(1000)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "62fe9b86",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mayank.withdraw(500)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "a87a3d5f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "500"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mayank.get_balance()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "d56c66de",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mayank.deposit(3000)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "40362964",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3500"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mayank.get_balance()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d1c3c7ee",
+   "metadata": {},
+   "source": [
+    "# INHERITANCE"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "35123c99",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class test:\n",
+    "    \n",
+    "    def test_meth(self):\n",
+    "        return \"This is my first class\"\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "7b4996c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class child_test(test):\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "cfe6740d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "child_test_obj = child_test()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "9b2012a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'This is my first class'"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "child_test_obj.test_meth()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "eb9c27bb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class class1:\n",
+    "    \n",
+    "    def test_class(self):\n",
+    "        return \"This is a meth from class1\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "7202b5f6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class class2(class1):\n",
+    "    \n",
+    "    def test_class2(self):\n",
+    "        return \"This is a meth from class2\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "a89accfe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class class3(class2):\n",
+    "    \n",
+    "    def test_class3(self):\n",
+    "        return \"This is a meth from class3\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "6900195c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m = class3()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "id": "fb1cf4ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'This is a meth from class1'"
+      ]
+     },
+     "execution_count": 93,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "m.test_class()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "c423ef66",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class class1:\n",
+    "    \n",
+    "    def test_class1(self):\n",
+    "        return \"This is a class1\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "9dac014d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class class2:\n",
+    "    \n",
+    "    def test_class2(self):\n",
+    "        return \"This is a class2\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "0197244c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class class3(class1,class2):\n",
+    "    \n",
+    "    def test_class3(self):\n",
+    "        return \"This is a class3\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "00742ed9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = class3()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "f51e22db",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'This is a class1'"
+      ]
+     },
+     "execution_count": 99,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a.test_class1()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "af4055bf",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
